@@ -1,0 +1,61 @@
+﻿  test2.cpp
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(132,47): warning C4267: “初始化”: 从“size_t”转换到“_Ty”，可能丢失数据
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(132,47): warning C4267:         with
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(132,47): warning C4267:         [
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(132,47): warning C4267:             _Ty=int
+D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(132,47): warning C4267:         ]
+  (编译源文件“test2.cpp”)
+      D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(132,47):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\UserData\CODE\CppConsole\test2.cpp(39,23):
+          查看对正在编译的函数 模板 实例化“std::tuple<uint64_t,int,int>::tuple<unsigned int,int,unsigned __int64,0>(std::tuple<unsigned int,int,unsigned __int64> &&) noexcept”的引用
+              D:\UserData\CODE\CppConsole\test2.cpp(39,12):
+              请参阅 "orderedSumOfList" 中对 "std::tuple<uint64_t,int,int>::tuple" 的第一个引用
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(375,16):
+          查看对正在编译的函数 模板 实例化“std::tuple<uint64_t,int,int>::tuple<std::_Unpack_tuple_t,std::tuple<unsigned int,int,unsigned __int64>,0>(_Tag,_Tpl &&)”的引用
+          with
+          [
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<unsigned int,int,unsigned __int64>
+          ]
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(309,16):
+          查看对正在编译的函数 模板 实例化“std::tuple<uint64_t,int,int>::tuple<std::_Unpack_tuple_t,_Ty,0,1,2,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1,2>)”的引用
+          with
+          [
+              _Ty=std::tuple<unsigned int,int,unsigned __int64>,
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<unsigned int,int,unsigned __int64>
+          ]
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(989,12):
+          查看对正在编译的函数 模板 实例化“std::tuple<uint64_t,int,int>::tuple<std::_Exact_args_t,unsigned int,int,unsigned __int64,0>(_Tag,_This2 &&,int &&,unsigned __int64 &&)”的引用
+          with
+          [
+              _Tag=std::_Exact_args_t,
+              _This2=unsigned int
+          ]
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(302,18):
+          查看对正在编译的函数 模板 实例化“std::tuple<int,int>::tuple<std::_Exact_args_t,_Ty,unsigned __int64,0>(_Tag,_This2 &&,unsigned __int64 &&)”的引用
+          with
+          [
+              _Ty=int,
+              _Tag=std::_Exact_args_t,
+              _This2=int
+          ]
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(302,18):
+          查看对正在编译的函数 模板 实例化“std::tuple<int>::tuple<std::_Exact_args_t,_Ty,,0>(_Tag,_This2 &&)”的引用
+          with
+          [
+              _Ty=unsigned __int64,
+              _Tag=std::_Exact_args_t,
+              _This2=unsigned __int64
+          ]
+          D:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\tuple(302,102):
+          查看对正在编译的函数 模板 实例化“std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)”的引用
+          with
+          [
+              _This=int,
+              _Ty=unsigned __int64,
+              _Other=unsigned __int64
+          ]
+  
+  CppConsole.vcxproj -> D:\UserData\CODE\CppConsole\x64\Debug\CppConsole.exe
